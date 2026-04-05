@@ -3,7 +3,7 @@ const slides = document.querySelectorAll(".video-slide");
 const contents = document.querySelectorAll(".content");
 
 let currentIndex = 0;
-let slideInterval = setInterval(nextSlide, 6000);
+let slideInterval = setInterval(nextSlide, 4000);
 
 function showSlide(index) {
     btns.forEach(btn => btn.classList.remove("active"));
@@ -12,6 +12,7 @@ function showSlide(index) {
 
     btns[index].classList.add("active");
     slides[index].classList.add("active");
+    contents[index].classList.add("active");
     contents[index].classList.add("active");
     currentIndex = index;
 }
