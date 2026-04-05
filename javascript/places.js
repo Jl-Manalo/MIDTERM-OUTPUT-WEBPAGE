@@ -13,7 +13,6 @@ function showSlide(index) {
     btns[index].classList.add("active");
     slides[index].classList.add("active");
     contents[index].classList.add("active");
-    contents[index].classList.add("active");
     currentIndex = index;
 }
 
@@ -21,7 +20,7 @@ btns.forEach((btn, i) => {
     btn.addEventListener("click", () => {
         clearInterval(slideInterval);
         showSlide(i);
-        slideInterval = setInterval(nextSlide, 6000);
+        slideInterval = setInterval(nextSlide, 4000);
     });
 });
 
